@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fffff3;
+}
+
+.imageWrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.imageWrapper .image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.imageWrapper .image:hover {
+  transform: scale(1.1);
+  transition: all .5s;
+}
+/*# sourceMappingURL=style.css.map */

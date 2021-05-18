@@ -13,7 +13,7 @@
     "test:html": "html-validate *.html",
     "test:js": "eslint js/",
     "test:scss": "stylelint sass/",
-    "build": "npm-run-all build:* test",
+    "build": "npm-run-all build:*",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
