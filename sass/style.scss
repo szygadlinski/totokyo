@@ -1,14 +1,29 @@
 // VARIABLES
+
 $pink: #d78082;
 $blue: #80a7d7;
 $gray: #585856;
+$white: #fff;
 $base-size: 12px;
 
 // ANIMATIONS
-%hover-animation {
+
+%icon-animation {
   transform: scale(1.3);
   transition: all .5s;
 }
+
+%arrow-up-animation {
+  transform: translateY(-30%);
+  transition: all .5s;
+}
+
+%arrow-down-animation {
+  transform: translateY(30%);
+  transition: all .5s;
+}
+
+// GLOBAL
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -23,13 +38,41 @@ body {
 
 h1 {
   font-size: $base-size * 4;
-  margin: ($base-size * 3) 0;
 }
 
 .main {
   height: 100vh;
   position: relative;
 }
+
+.nav-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+  &.up {
+    top: 0;
+
+    img {
+      &:hover {
+        @extend %arrow-up-animation;
+      }
+    }
+  }
+
+  &.down {
+    bottom: 0;
+
+    img {
+      &:hover {
+        @extend %arrow-down-animation;
+      }
+    }
+  }
+}
+
+// HEADER
 
 header {
   .banner {
@@ -51,6 +94,10 @@ header {
     display: inline-flex;
     align-items: center;
 
+    h1 {
+      margin: ($base-size * 3) 0;
+    }
+
     a {
       margin-left: $base-size * 2;
 
@@ -60,24 +107,36 @@ header {
       }
 
       &:hover {
-        @extend %hover-animation;
+        @extend %icon-animation;
       }
     }
   }
+}
 
-  .nav-icon {
+// SECTION PINK
+
+.pink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $pink;
+  color: $white;
+
+  .fox {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
+    top: $base-size * 4;
+    right: $base-size * 6;
+    width: 250px;
+    height: auto;
 
     img {
-      &:hover {
-        @extend %hover-animation;
-      }
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
-
+  h1 {
+    margin: ($base-size * 10) 0;
+  }
 }
