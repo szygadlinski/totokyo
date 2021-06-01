@@ -36,6 +36,29 @@ body {
   color: $gray;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+
+  .fox {
+    position: absolute;
+    width: 250px;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  h1 {
+    margin: ($base-size * 10) 0;
+  }
+}
+
 h1 {
   font-size: $base-size * 4;
 }
@@ -116,27 +139,21 @@ header {
 // SECTION PINK
 
 .pink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: $pink;
-  color: $white;
 
   .fox {
-    position: absolute;
     top: $base-size * 4;
     right: $base-size * 6;
-    width: 250px;
-    height: auto;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
+}
 
-  h1 {
-    margin: ($base-size * 10) 0;
+// SECTION BLUE
+
+.blue {
+  background: $blue;
+
+  .fox {
+    bottom: $base-size * 4;
+    left: $base-size * 6;
   }
 }
