@@ -1,27 +1,66 @@
+header .text a:hover, header .nav-icon img:hover {
+  transform: scale(1.3);
+  transition: all .5s;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: #fffff3;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  color: #585856;
 }
 
-.imageWrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+h1 {
+  font-size: 48px;
+  margin: 36px 0;
 }
 
-.imageWrapper .image {
+.main {
+  height: 100vh;
+  position: relative;
+}
+
+header .banner {
+  position: relative;
   width: 100%;
-  height: auto;
-  cursor: pointer;
+  height: 68vh;
 }
 
-.imageWrapper .image:hover {
-  transform: scale(1.1);
-  transition: all .5s;
+header .banner img {
+  position: absolute;
+  top: -140px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .text {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+header .text a {
+  margin-left: 24px;
+}
+
+header .text a img {
+  width: 60px;
+  height: 60px;
+}
+
+header .nav-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
