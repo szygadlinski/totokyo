@@ -157,3 +157,47 @@ header {
     left: $base-size * 6;
   }
 }
+
+// FOOTER
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+
+    img {
+      width: auto;
+      height: 60px;
+      margin-right: $base-size * 2;
+    }
+
+    &:hover {
+      text-decoration: underline;
+
+      img {
+        @extend %icon-animation;
+      }
+    }
+
+    h1 {
+      margin: ($base-size * 10) 0;
+    }
+  }
+
+  .socials a {
+    margin: 0 ($base-size * 8);
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

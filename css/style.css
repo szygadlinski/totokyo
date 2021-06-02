@@ -1,4 +1,4 @@
-header .text a:hover {
+header .text a:hover, footer a:hover img {
   transform: scale(1.3);
   transition: all .5s;
 }
@@ -127,5 +127,49 @@ header .text a img {
 .blue .fox {
   bottom: 48px;
   left: 72px;
+}
+
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+footer a {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+}
+
+footer a img {
+  width: auto;
+  height: 60px;
+  margin-right: 24px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a h1 {
+  margin: 120px 0;
+}
+
+footer .socials a {
+  margin: 0 96px;
+}
+
+footer p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */
