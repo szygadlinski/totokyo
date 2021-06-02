@@ -1,27 +1,167 @@
+header .text a:hover, footer a:hover img {
+  transform: scale(1.3);
+  transition: all .5s;
+}
+
+.nav-icon.up img:hover {
+  transform: translateY(-30%);
+  transition: all .5s;
+}
+
+.nav-icon.down img:hover {
+  transform: translateY(30%);
+  transition: all .5s;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: #fffff3;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  color: #585856;
 }
 
-.imageWrapper {
+section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #fff;
 }
 
-.imageWrapper .image {
-  width: 100%;
+section .fox {
+  position: absolute;
+  width: 250px;
   height: auto;
+}
+
+section .fox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section h1 {
+  margin: 120px 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.main {
+  height: 100vh;
+  position: relative;
+}
+
+.nav-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
 }
 
-.imageWrapper .image:hover {
-  transform: scale(1.1);
-  transition: all .5s;
+.nav-icon.up {
+  top: 0;
+}
+
+.nav-icon.down {
+  bottom: 0;
+}
+
+header .banner {
+  width: 100%;
+  max-height: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 24px;
+}
+
+header .text {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+header .text h1 {
+  margin: 36px 0;
+}
+
+header .text a {
+  margin-left: 24px;
+}
+
+header .text a img {
+  width: 60px;
+  height: 60px;
+}
+
+.pink {
+  background: #d78082;
+}
+
+.pink .fox {
+  top: 48px;
+  right: 72px;
+}
+
+.blue {
+  background: #80a7d7;
+}
+
+.blue .fox {
+  bottom: 48px;
+  left: 72px;
+}
+
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+footer a {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-decoration: none;
+}
+
+footer a img {
+  width: auto;
+  height: 60px;
+  margin-right: 24px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a h1 {
+  margin: 120px 0;
+}
+
+footer .socials a {
+  margin: 0 96px;
+}
+
+footer p {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */
