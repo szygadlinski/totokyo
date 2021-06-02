@@ -107,6 +107,9 @@ h1 {
 
 header {
   .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     max-height: 65%;
     object-fit: cover;
@@ -115,6 +118,10 @@ header {
   .text {
     display: inline-flex;
     align-items: center;
+
+    &:first-of-type {
+      margin-top: 37%;
+    }
 
     h1 {
       margin: ($base-size * 3) 0;
@@ -209,6 +216,10 @@ footer {
   }
 
   header .text {
+    &:first-of-type {
+      margin-top: 22%;
+    }
+
     h1 {
       margin: 0;
     }
@@ -245,6 +256,10 @@ footer {
   }
 
   header .text {
+    &:first-of-type {
+      margin-top: 22%;
+    }
+
     h1 {
       margin: 0;
     }
