@@ -37,9 +37,6 @@ body {
 }
 
 section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: $white;
 
   .fox {
@@ -61,11 +58,21 @@ section {
 
 h1 {
   font-size: $base-size * 4;
+  line-height: 1.7;
 }
 
-.main {
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100vh;
   position: relative;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
 }
 
 .nav-icon {
@@ -73,6 +80,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+  z-index: 1;
 
   &.up {
     top: 0;
@@ -99,15 +107,21 @@ h1 {
 
 header {
   .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     max-height: 65%;
     object-fit: cover;
-    margin-bottom: $base-size * 2;
   }
 
   .text {
     display: inline-flex;
     align-items: center;
+
+    &:first-of-type {
+      margin-top: 37%;
+    }
 
     h1 {
       margin: ($base-size * 3) 0;
@@ -191,5 +205,102 @@ footer {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+// MEDIA
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: $base-size * 1.5;
+  }
+
+  header .text {
+    &:first-of-type {
+      margin-top: 22%;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    a img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  section h1,
+  footer a h1 {
+    margin: ($base-size * 2) 0;
+  }
+
+  section .fox {
+    width: 125px;
+  }
+
+  .pink .fox {
+    top: $base-size * 2;
+    right: $base-size * 3;
+  }
+
+  .blue .fox {
+    bottom: $base-size * 2;
+    left: $base-size * 3;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  h1 {
+    font-size: $base-size * 2;
+  }
+
+  header .text {
+    &:first-of-type {
+      margin-top: 22%;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    a img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  section h1,
+  footer a h1 {
+    margin: ($base-size * 2) 0;
+  }
+
+  section .fox {
+    width: 125px;
+  }
+
+  .pink .fox {
+    top: $base-size * 2;
+    right: $base-size * 3;
+  }
+
+  .blue .fox {
+    bottom: $base-size * 2;
+    left: $base-size * 3;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  h1 {
+    font-size: $base-size * 3;
+  }
+
+  header .text h1 {
+    margin: $base-size 0;
+  }
+
+  section h1,
+  footer a h1 {
+    margin: ($base-size * 4) 0;
   }
 }

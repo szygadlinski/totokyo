@@ -7,94 +7,115 @@
     <link rel="icon" href="images/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css" integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <header class="main">
-      <img class="banner" src="images/banner.png" alt="totokyo-banner">
+    <div id="fullpage">
+      <header class="section">
+        <img class="banner" src="images/banner.png" alt="totokyo-banner">
 
-      <div class="text">
-        <h1>Daleki Wschód skrywa w sobie wiele tajemnic.</h1>
-      </div>
+        <div class="container">
+          <div class="text">
+            <h1>Daleki Wschód skrywa w sobie wiele tajemnic.</h1>
+          </div>
 
-      <div class="text">
-        <h1>Czy chcesz je wspólnie z nami poznać?</h1>
-        <a href="https://www.facebook.com/totokyopl">
-          <img src="images/icons/fb.png" alt="facebook-icon">
-        </a>
-        <a href="https://www.instagram.com/totokyopl">
-          <img src="images/icons/ig.png" alt="instagram-icon">
-        </a>
-      </div>
+          <div class="text">
+            <h1>Czy chcesz je wspólnie z nami poznać?</h1>
+            <a href="https://www.facebook.com/totokyopl">
+              <img src="images/icons/fb.png" alt="facebook-icon">
+            </a>
+            <a href="https://www.instagram.com/totokyopl">
+              <img src="images/icons/ig.png" alt="instagram-icon">
+            </a>
+          </div>
+        </div>
 
-      <div class="nav-icon down">
-        <img src="images/icons/arrow-down-pink.png" alt="arrow-down">
-      </div>
-    </header>
+        <div class="nav-icon down" onclick="fullpage_api.moveSectionDown()">
+          <img src="images/icons/arrow-down-pink.png" alt="arrow-down">
+        </div>
+      </header>
 
-    <section class="main pink">
-      <div class="nav-icon up">
-        <img src="images/icons/arrow-up-white.png" alt="arrow-up">
-      </div>
+      <section class="section pink">
+        <div class="nav-icon up" onclick="fullpage_api.moveSectionUp()">
+          <img src="images/icons/arrow-up-white.png" alt="arrow-up">
+        </div>
 
-      <div class="fox">
-        <img src="images/fox-left.png" alt="totokyo-fox">
-      </div>
+        <div class="fox">
+          <img src="images/fox-left.png" alt="totokyo-fox">
+        </div>
 
-      <div class="text">
-        <h1>Piszemy, rozmawiamy, badamy.</h1>
-        <h1>Organizujemy, patronujemy.</h1>
-        <h1>Przybliżamy popkulturę Japonii i Korei Południowej.</h1>
-      </div>
+        <div class="container">
+          <div class="text">
+            <h1>Piszemy, rozmawiamy, badamy.</h1>
+            <h1>Organizujemy, patronujemy.</h1>
+            <h1>Przybliżamy popkulturę Japonii i Korei Południowej.</h1>
+          </div>
+        </div>
 
-      <div class="nav-icon down">
-        <img src="images/icons/arrow-down-white.png" alt="arrow-down">
-      </div>
-    </section>
+        <div class="nav-icon down" onclick="fullpage_api.moveSectionDown()">
+          <img src="images/icons/arrow-down-white.png" alt="arrow-down">
+        </div>
+      </section>
 
-    <section class="main blue">
-      <div class="nav-icon up">
-        <img src="images/icons/arrow-up-white.png" alt="arrow-up">
-      </div>
+      <section class="section blue">
+        <div class="nav-icon up" onclick="fullpage_api.moveSectionUp()">
+          <img src="images/icons/arrow-up-white.png" alt="arrow-up">
+        </div>
 
-      <div class="text">
-        <h1>Wspieramy podobnie ukierunkowane działania.</h1>
-        <h1>Jesteśmy otwarci na współpracę w tym zakresie.</h1>
-        <h1>Ponieważ wiemy, że to nie tylko nasze marzenia.</h1>
-      </div>
+        <div class="container">
+          <div class="text">
+            <h1>Wspieramy podobnie ukierunkowane działania.</h1>
+            <h1>Jesteśmy otwarci na współpracę w tym zakresie.</h1>
+            <h1>Ponieważ wiemy, że to nie tylko nasze marzenia.</h1>
+          </div>
+        </div>
 
-      <div class="fox">
-        <img src="images/fox-right.png" alt="totokyo-fox">
-      </div>
+        <div class="fox">
+          <img src="images/fox-right.png" alt="totokyo-fox">
+        </div>
 
-      <div class="nav-icon down">
-        <img src="images/icons/arrow-down-white.png" alt="arrow-down">
-      </div>
-    </section>
+        <div class="nav-icon down" onclick="fullpage_api.moveSectionDown()">
+          <img src="images/icons/arrow-down-white.png" alt="arrow-down">
+        </div>
+      </section>
 
-    <footer class="main">
-      <div class="nav-icon up">
-        <img src="images/icons/arrow-up-blue.png" alt="arrow-up">
-      </div>
+      <footer class="section">
+        <div class="nav-icon up" onclick="fullpage_api.moveSectionUp()">
+          <img src="images/icons/arrow-up-blue.png" alt="arrow-up">
+        </div>
 
-      <a class="mail" href="mailto:kontakt@totokyo.pl">
-        <img src="images/icons/mail.png" alt="mail-icon">
-        <h1>kontakt@totokyo.pl</h1>
-      </a>
+        <div class="container">
+          <a class="mail" href="mailto:kontakt@totokyo.pl">
+            <img src="images/icons/mail.png" alt="mail-icon">
+            <h1>kontakt@totokyo.pl</h1>
+          </a>
 
-      <div class="socials">
-        <a href="https://www.facebook.com/totokyopl">
-          <img src="images/icons/fb.png" alt="facebook-icon">
-          <h1>totokyopl</h1>
-        </a>
-        <a href="https://www.instagram.com/totokyopl">
-          <img src="images/icons/ig.png" alt="instagram-icon">
-          <h1>totokyopl</h1>
-        </a>
-      </div>
+          <div class="socials">
+            <a href="https://www.facebook.com/totokyopl">
+              <img src="images/icons/fb.png" alt="facebook-icon">
+              <h1>totokyopl</h1>
+            </a>
+            <a href="https://www.instagram.com/totokyopl">
+              <img src="images/icons/ig.png" alt="instagram-icon">
+              <h1>totokyopl</h1>
+            </a>
+          </div>
 
-      <p>Copyright 2021 &copy; Szymon Zygadliński</p>
-    </footer>
+          <p>Copyright 2021 &copy; <a href="https://www.linkedin.com/in/szygadlinski/">Szymon Zygadliński</a></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+      new fullpage('#fullpage', {
+        autoScrolling:true,
+        scrollBar:true,
+        loopBottom:true,
+      });
+      fullpage_api.setAllowScrolling(true);
+    </script>
   </body>
 </html>
