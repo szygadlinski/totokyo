@@ -58,7 +58,10 @@ section {
 
 h1 {
   font-size: $base-size * 4;
-  line-height: 1.7;
+}
+
+h2 {
+  margin: 0;
 }
 
 .section {
@@ -108,7 +111,7 @@ h1 {
 header {
   .banner {
     position: absolute;
-    top: 0;
+    top: -10%;
     left: 0;
     width: 100%;
     max-height: 65%;
@@ -116,15 +119,17 @@ header {
   }
 
   .text {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
 
     &:first-of-type {
-      margin-top: 37%;
+      margin-top: 30%;
     }
 
     h1 {
-      margin: ($base-size * 3) 0;
+      font-size: $base-size * 3;
+      margin: $base-size 0;
     }
 
     a {
@@ -137,6 +142,38 @@ header {
 
       &:hover {
         @extend %icon-animation;
+      }
+    }
+  }
+
+  .zin {
+    font-family: 'Goldman', cursive;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: ($base-size * 2) 0;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      background: $pink;
+      border-radius: $base-size * 3;
+      padding: $base-size ($base-size * 4);
+      margin-right: $base-size * 6;
+
+      &:hover {
+        @extend %icon-animation;
+      }
+    }
+
+    h1 {
+      font-size: $base-size * 5;
+      margin: 0;
+      line-height: 1;
+
+      strong {
+        font-size: larger;
       }
     }
   }
@@ -215,6 +252,10 @@ footer {
     font-size: $base-size * 1.5;
   }
 
+  header .banner {
+    top: 0;
+  }
+
   header .text {
     &:first-of-type {
       margin-top: 22%;
@@ -227,6 +268,18 @@ footer {
     a img {
       width: 30px;
       height: 30px;
+    }
+  }
+
+  header .zin {
+    flex-direction: column;
+
+    a {
+      margin: ($base-size * 3) 0;
+    }
+
+    h1 {
+      font-size: $base-size * 3;
     }
   }
 
@@ -255,6 +308,10 @@ footer {
     font-size: $base-size * 2;
   }
 
+  header .banner {
+    top: 0;
+  }
+
   header .text {
     &:first-of-type {
       margin-top: 22%;
@@ -267,6 +324,16 @@ footer {
     a img {
       width: 30px;
       height: 30px;
+    }
+  }
+
+  header .zin {
+    a {
+      margin-right: $base-size * 3;
+    }
+
+    h1 {
+      font-size: $base-size * 3;
     }
   }
 
@@ -295,8 +362,14 @@ footer {
     font-size: $base-size * 3;
   }
 
-  header .text h1 {
-    margin: $base-size 0;
+  header {
+    .text h1 {
+      margin: $base-size 0;
+    }
+
+    .zin h1 {
+      font-size: $base-size * 4;
+    }
   }
 
   section h1,
