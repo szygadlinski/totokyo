@@ -50,6 +50,7 @@ h1 {
 }
 
 h2 {
+  font-size: 24px;
   margin: 0;
 }
 
@@ -221,6 +222,9 @@ footer p {
   h1 {
     font-size: 18px;
   }
+  h2 {
+    font-size: 12px;
+  }
   header .banner {
     top: 0;
   }
@@ -228,6 +232,7 @@ footer p {
     margin-top: 22%;
   }
   header .text h1 {
+    font-size: 18px;
     margin: 0;
   }
   header .text a img {
@@ -242,7 +247,7 @@ footer p {
     margin: 36px 0;
   }
   header .zin h1 {
-    font-size: 36px;
+    font-size: 24px;
   }
   section h1,
   footer a h1 {
@@ -272,6 +277,7 @@ footer p {
     margin-top: 22%;
   }
   header .text h1 {
+    font-size: 24px;
     margin: 0;
   }
   header .text a img {
